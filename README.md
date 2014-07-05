@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/chatgris/event_source_encoder.png?branch=master)](https://travis-ci.org/chatgris/event_source_encoder)
 # EventSourceEncoder
 
 EventSourceEncoder is a Elixir library to encode data into EventSource
