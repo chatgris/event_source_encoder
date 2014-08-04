@@ -13,16 +13,16 @@ defmodule EventSourceEncoder do
   ## Examples
 
       iex> EventSourceEncoder.encode(1, "This is data")
-      "id:1\\ndata: This is data\\n\\n"
+      "id: 1\\ndata: This is data\\n\\n"
 
       iex> EventSourceEncoder.encode(1, "This is new data", :login)
-      "id:1\\nevent:login\\ndata: This is new data\\n\\n"
+      "id: 1\\nevent: login\\ndata: This is new data\\n\\n"
   """
   def encode(id, data) do
-    "id:#{id}\ndata: #{data}\n\n"
+    "id: #{id}\ndata: #{data}\n\n"
   end
 
   def encode(id, data, event) do
-    "id:#{id}\nevent:#{event}\ndata: #{data}\n\n"
+    "id: #{id}\nevent: #{event}\ndata: #{data}\n\n"
   end
 end
