@@ -5,7 +5,7 @@ defmodule EventSourceEncoder.Mixfile do
     [
       app: :event_source_encoder,
       version: "0.0.1",
-      elixir: "~> 0.14.2",
+      elixir: "~> 0.14",
       description: description,
       package: package,
       deps: deps
